@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    background: #000;
+    color: whitesmoke;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 2px solid white;
+}
+.header-right{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.header-right p{
+    cursor: pointer;
+}
+
+
+/* ************ UTILITIES ***************/
+
+.btn{
+    padding: 10px 50px;
+    font-size: 15px;
+    margin:30px 0;
+}
+
+/********** SIGN UP********** */
+
+#signup-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+#form-container{
+    width: 60%;
+}
+form h1{
+    margin: 10px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    background: inherit;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    width: 100%;
+    color: whitesmoke;
+    margin:10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+input:focus{
+    border-bottom: none;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgb(225, 214, 214);
+}
+
+#signup-status{
+    margin-top: 20px;
+}
+#error-message{
+    color: rgb(211, 34, 34);
+    display: none;
+}
+#success-message{
+    color: rgb(37, 232, 37);
+    display: none;
+}
+
+
+/* *************** PROFILE ***************8 */
+
+#profile-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+    display: none;
+}
+
+#profile-container h2{
+    margin: 20px 0;
+}
